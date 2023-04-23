@@ -496,6 +496,13 @@ nav ul li:hover::after{
    background-color: #84a98c;
 }
 
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    margin: 20px 0;
+
+}
 /********** Responsive Design ********/
 @media(max-width:900px)
 {
@@ -524,8 +531,72 @@ nav ul li:hover::after{
 
 /*Detail Page*/
 #product-detail{
-    
+    display: flex;
+    margin-top: 20px;
 }
+#product-detail .pro-img{
+    width: 25%;
+    margin-right: 50px;  
+}
+
+.small-img-gr{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#product-detail .pro-detail{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#product-detail .pro-detail h4{
+    padding: 40px 0 20px 0;
+}
+
+#product-detail .pro-detail h2{
+    font-size: 26px;
+}
+
+#product-detail .pro-detail input{
+    width: 50px;
+    height: 47px;
+    padding-left: 16px;
+    margin-right: 10px;
+}
+#product-detail .pro-detail button{
+    background-color: #84a98c;
+    color: white;
+}
+
+#product-detail .pro-detail span{
+    line-height: 25px;
+}
+
+#product-detail .pro-detail ol{
+    list-style-type: circle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
