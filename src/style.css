@@ -123,22 +123,14 @@ li {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.submenu{
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
+
 
 li:hover .dropdown-menu {
     display: block;
+    width: auto;
 }
 
-nav ul li::after{
+#header ul li::after{
     content: '';
     height: 3px;
     width: 0;
@@ -148,8 +140,8 @@ nav ul li::after{
     bottom: -3px;
     transition: 0.5s;
 }
-nav ul li:hover::after{
-    width: 100%;
+#header ul li:hover::after{
+    width: 30%;
 }
 
 .banner {
@@ -157,7 +149,35 @@ nav ul li:hover::after{
     height: auto;
 }
 
+#mobile{
+    display: none;
+    align-items: center;
+}
 
+/* Responsive Menu */
+@media (max-width:899px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        width: auto;
+        height: 300vh;
+        background-color: #ccc;
+        box-shadow:0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 20px 0px 20px 5px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #hero iframe {     
+          width: auto;
+          height: auto;
+    }
+}
 
 /*Home Page */
 #hero {
@@ -580,25 +600,6 @@ hr{
 #product-detail .pro-detail ol{
     list-style-type: circle;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Contact Page*/
 #contactUs {
